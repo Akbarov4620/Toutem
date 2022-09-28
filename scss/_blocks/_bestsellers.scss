@@ -1,0 +1,162 @@
+.bestsellers__section{
+    height: 700px;
+    padding-top: 185px;
+    background-image: url(/img/Vector\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left 150px;
+
+    ul{
+        display: flex;
+        justify-content: right;
+        gap: 6px;
+        margin-top: 60px;
+        margin-right: 330px;
+
+        li{
+            margin: 0;
+
+            .circle{
+                width: 8px;
+                height: 8px;
+                border: none;
+                border-radius: 50%;
+                background-color: $primary-color-gray;
+            }
+
+            .green{
+                background-color: $primary-color-green;
+            }
+
+            
+        }
+    }
+
+    &-inner{
+        display: flex;
+        align-items: center;
+        gap: 190px;
+    }
+
+    &-heading{
+        margin: 0;
+    }
+
+    &-card{
+        display: flex;
+        gap: 15px;
+        position: relative;
+
+        &s{
+            cursor: pointer;
+            
+            .card{
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(7.5px);
+                border-radius: 0px 20px;
+                position: absolute;
+                top: 300px;
+                padding: 13px 20px 10px;
+                
+                &-heading{
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+
+                    h4{
+                        font-size: 20px;
+                        color: $primary-color-grey;
+                        margin: 0;
+                    }
+
+                }                
+
+                &-text{
+                    display: flex;
+                    gap: 60px;
+
+                    p{
+                        color: $primary-color-gray;
+                        width: 239px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:$tablet){
+        &-card{
+            flex-direction: column;
+        }
+
+        &-inner{
+            flex-direction: column;
+        }
+
+        &-heading{
+            text-align: center;
+        }
+
+        ul{
+            margin-right: 350px;
+        }
+    }
+
+    @media (max-width:$phone){
+        background-position: center 70px;
+        background-size: 250px;
+
+
+        &-card{
+            &s{
+                img{
+                    width: 298.41px;
+                    height: 307.16px;
+                }
+
+                .card{
+                    top: 234px;
+                    padding: 13px 30px 10px;
+
+                    &-text{
+                        svg{
+                            display: none;
+                        }
+
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+
+                    &-heading{
+                        h4{
+                            font-size: 15px;
+                        }
+
+                        .price{
+                            font-size: 6px;
+                        }
+                    }
+                }
+            }
+        }
+
+        ul{
+            margin-right: 165px;
+        }
+    }
+}
+
+.second{
+    background-image: none;
+    background-image: url(/img/Vector\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: 260px;
+    background-position: left 150px;
+
+    @media (max-width:$phone){
+        background-position: center 100px;
+        background-size: 160px;
+    }
+}

@@ -1,0 +1,107 @@
+.aromatherapy__section{
+    background-image: url(/img/Blob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+
+    &-inner{
+        margin-top: 200px;
+        height: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &-text{
+        width: 570px;
+        margin: 0;
+        text-align: right;
+
+        div{
+            padding-left: 160px;
+            margin-bottom: 24px;
+            color: $primary-color-gray;
+        }
+
+        a{
+            margin-left: 292px;
+        }
+    }
+
+    @media (max-width:$tablet){
+        &-inner{
+            height: 500px;
+        }
+
+        &-img{
+            img{
+                width: 382px;
+                height: 336px;
+            }
+        }
+
+        &-text{
+            width: 480px;
+            padding-right: 130px;
+
+            a{
+                margin-left: 82px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+
+            div{
+                padding-left: 90px;
+            }
+        }
+    }
+
+    @media (max-width:$phone){
+        background-image: none;
+        background-image:  url(/img/Blob\ 2.png);
+        background-position: center 0px;
+        background-size: 200px;
+
+        &-inner{
+            flex-direction: column;
+        }
+
+        &-img{
+            img{
+                width: 155.27px;
+                height: 137.38px;
+            }
+        }
+
+        &-text{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            width:  375px;
+            margin-top: 100px;
+
+            h2{
+                font-size: 20px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            div{
+                margin-top: 20px;
+                padding: 0;
+                width: 263px;
+
+                p{
+                    margin: 0 auto;
+                }
+            }
+
+            a{
+                margin: 0 auto;
+            }
+        }    
+    }   
+}

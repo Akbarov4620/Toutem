@@ -1,0 +1,116 @@
+.hero__section{
+    height: 802px;
+    padding-top: 240px;
+    background-image: url(/img/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 750px;
+
+    @media (max-width:$tablet){
+        background-image: url(/img/Ellipse\ 1.1.png);
+        background-size: 250px;
+        background-position: right 50px;
+        height: 602px;
+        
+        
+        &-inner{
+            align-items: center;
+        }
+
+        &-img{
+            max-width: 300px;
+            max-height: 267px; 
+            
+
+            .cosmetic-bottle{
+                width: 290px;
+                height: 196px;
+                margin: 0;
+                left: 90px;
+            }
+
+        }
+
+        &-text{
+
+            .heading{
+                font-size: 80px;
+            }
+        }
+
+    }
+
+    @media (max-width:$phone){
+        background-image: none;
+        background-image: url(/img/Ellipse\ 1.2.png);
+        background-repeat: no-repeat;
+        background-position: center 340px;
+        background-size: 200px;
+        padding-top: 140px;
+
+        &-inner{
+            flex-direction: column;
+            
+        }
+
+        &-text{
+            max-width: 300px;
+            text-align: center;
+
+            .heading{
+                font-size: 40px;
+                max-width: 200px;
+            }
+        }
+
+        &-img{
+            max-width: 300px;
+            max-height: 267px; 
+            
+
+            .cosmetic-bottle{
+                width: 123px;
+                height: 83px;
+                margin: 0;
+                left: 100px;
+                top: 50px;
+            }
+
+        }
+
+    }
+
+    &-inner{
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    &-text{
+        width: 450px;
+        margin: 0;
+
+        h2{
+            font-size: 92px;
+            line-height: 89.84%;
+        }
+
+        p{
+            font-weight: 600;
+            line-height: 140%;
+            color: $primary-color-gray;
+        }
+    }
+
+    &-img{
+        position: relative;
+        height: 520px;
+        width: 770px;
+
+        img{
+            position: absolute;
+            top: 10px;
+            left: 150px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn{
+    width: 274px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color-green;
+    color: #fff;
+    border-radius: 8px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+    @media (max-width:$tablet) {
+        width: 270px;
+    }
+
+    @media (max-width:$phone){
+        width: 300px;
+    }
+}
+
+.btn-white{
+    background-color: #fff;
+    color: $primary-color-grey;
+}
+
+.price{
+    font-size: 10px;
+    color: #fff;
+    background-color: $primary-color-green;
+    border-radius: 5px;
+    width: 22px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.rounded{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.heading{
+    color: $primary-color-green;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 89.84%;
+    margin-bottom: 38px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    @media (max-width:$tablet){
+        font-size: 30px;
+    }
+}
+
+.heading-white{
+    color: #fff;
+}
+
+h1{
+    margin: 0;
+}
+
+nav{
+    margin: 0;
+}
+
+.size-12px{
+    font-size: 12px;
+    line-height: 135%;
+}
+
+.size-14px{
+    font-size: 14px;
+}

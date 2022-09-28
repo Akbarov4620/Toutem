@@ -1,0 +1,24 @@
+$desktop:1200px;
+$tablet:768px;
+$phone:390px;
+
+$primary-color-grey: #1F2937 ;
+$primary-color-gray: #9CA3AF ;
+$primary-color-green: #5FD788;
+
+@mixin list {
+    width: 273.9px;
+    height: 274px;
+    background: #F9FAFB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 20px;
+    padding: 67px 80px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+
+    @media (max-width:$phone){
+        width: 123px;
+        height: 123px;
+    }
+}

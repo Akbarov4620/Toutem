@@ -1,0 +1,75 @@
+.header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    
+        h1{
+            a{
+                color: $primary-color-grey;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    
+        &-list{
+            display: flex;
+            gap: 10px;
+    
+            a{
+                color: $primary-color-grey;
+                font-weight: 600;
+                
+                &:hover{
+                    text-transform: lowercase;
+                    
+                }
+    
+                &:active{
+                    text-transform: lowercase;
+                    
+                }
+                
+            } 
+        }
+    
+        &-list--img{
+            display: flex;
+            gap: 12px;
+            margin: 0;
+    
+            a{
+                margin: 0;
+            }
+        }
+
+        @media (max-width:$phone){
+
+            &-list{
+                li{
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            &-list--img{
+                a{
+                    svg{
+                        width: 10px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+

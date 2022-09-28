@@ -1,0 +1,66 @@
+.categories__section-inner{
+    ul{
+        display: flex;
+        justify-content: center;
+        margin-top: 260px;
+
+        li{
+            @include list;
+
+            a{
+                color: $primary-color-green;
+            }
+
+            p{
+                color: $primary-color-green;
+            }
+
+            &:hover{
+                background-color: $primary-color-green;
+    
+                a{
+                    color: #F9FAFB;
+                }
+    
+                p{
+                    color: #F9FAFB;
+                }
+            }
+
+            &:active{
+                background-color: $primary-color-green;
+    
+                a{
+                    color: #F9FAFB;
+                }
+    
+                p{
+                    color: #F9FAFB;
+                }
+            }
+        }
+
+        @media (max-width:$tablet){
+            flex-direction: column;
+
+            li{
+                margin: 0 auto;
+                margin-bottom: 46px;
+            }
+        }
+
+        @media (max-width:$phone){
+            li{
+                padding: 0;
+                padding-top: 25px;
+
+                a{
+                    svg{
+                        width: 59px;
+                        height: 53px;
+                    }
+                }
+            }
+        }
+    }
+}

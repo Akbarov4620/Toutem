@@ -1,0 +1,130 @@
+.blog__section{
+
+    &-inner{
+        h2{
+            text-align: center;
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                width: 371px;
+                height: 395px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+
+                .blog__section-img{
+                    height: 50%;
+                }
+
+                .blog__section-text{
+                    height: 50%;
+                    padding: 22px 23px;
+
+                    h3{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 140%;
+                        color: $primary-color-green;
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: $primary-color-gray;
+                    }
+
+                    hr{
+                        height: 0.5;
+                        border:0.5px solid #F3F4F6;
+                        margin: 12px 0 22px 0 ;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:$tablet){
+        &-inner{
+            margin-top: 800px;
+
+            ul{
+                flex-direction: column;
+
+                li{
+                    height: 667px;
+                    margin-bottom: 100px;
+
+                    .blog__section-img{
+                        height: 50%;
+
+                        img{
+                            height: 344px;
+                        }
+                    }
+
+                    .blog__section-text{
+                        height: 50%;
+                        padding: 32px 23px;
+
+                        hr{
+                            margin: 42px 0 52px 0 ;
+                        }
+                    }
+                }
+            }
+
+            h2{
+                text-align: center;
+                margin-bottom: 150px;
+            }
+        }
+    }
+
+    @media (max-width:$phone){
+        &-inner{
+            h2{
+                font-size: 50px;
+            }
+
+            ul{
+
+                li{
+                    height: 370px;
+                    width: 205px;
+                    margin-bottom: 100px;
+
+                    .blog__section-img{
+                        height: 50%;
+
+                        img{
+                            width: 205px;
+                            height: 191px;
+                        }
+                    }
+
+                    .blog__section-text{
+                        height: 50%;
+                        padding: 20.9px 12.7px;
+
+                        h3{
+                            font-size: 16px;
+                        }
+
+                        p{
+                            font-size: 12px;
+                        }
+
+                        hr{
+                            margin: 2px 0 21px 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
